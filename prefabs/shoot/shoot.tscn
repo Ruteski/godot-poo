@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4bpyetcxquvi"]
+
+[ext_resource type="Texture2D" uid="uid://by06mlqiffuhi" path="res://assets/sprites/shoot/shoot.png" id="1_q8pw4"]
+[ext_resource type="Script" path="res://scripts/shoot.gd" id="1_tnewe"]
+
+[node name="Shoot" type="Node2D"]
+script = ExtResource("1_tnewe")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+rotation = -1.5708
+texture = ExtResource("1_q8pw4")
+
+[node name="ScreenNotifier" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="ScreenNotifier" to="." method="_on_screen_notifier_screen_exited"]

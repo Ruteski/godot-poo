@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxld7osbgrc04"]
+
+[ext_resource type="PackedScene" uid="uid://bqr8c5yms4wvr" path="res://prefabs/player/ids.tscn" id="1_xim2b"]
+
+[node name="Level3" type="Node2D"]
+position = Vector2(560, 361)
+
+[node name="IDS" parent="." instance=ExtResource("1_xim2b")]
+position = Vector2(-5, 4)
+life = 4
+speed = 100

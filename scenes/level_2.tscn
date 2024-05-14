@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbgg6es2ynmxn"]
+
+[ext_resource type="PackedScene" uid="uid://bactayv5e10nh" path="res://prefabs/player/fsx.tscn" id="1_2r7h3"]
+
+[node name="Level2" type="Node2D"]
+position = Vector2(560, 334)
+
+[node name="FSX" parent="." instance=ExtResource("1_2r7h3")]
+position = Vector2(-5, 5)
+life = 3
+speed = 200
